@@ -43,6 +43,7 @@ def add_some_png():
     # photo_1.show()
     photo_1.save("new_imgs/he-he-he.png")
 
+
 def main():
     # png_without_bg()
     add_some_png()
