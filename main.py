@@ -30,8 +30,22 @@ def png_without_bg():
         step += 1
 
 
+def add_some_png():
+    background = Image.open("input_imgs/sea_.jpg")
+    foreground = Image.open("new_imgs/smartlamps.png")
+    background.paste(foreground, (400, 400), foreground)
+    # background.show()
+    # foreground.show()
+    background.save("new_imgs/add_photos.png")
+    photo_1 = Image.open("new_imgs/add_photos.png")
+    foreground_2 = Image.open("new_imgs/pic_1 .png")
+    photo_1.paste(foreground_2, (0, 600), foreground_2)
+    # photo_1.show()
+    photo_1.save("new_imgs/he-he-he.png")
+
 def main():
-    png_without_bg()
+    # png_without_bg()
+    add_some_png()
 
 
 if __name__ == "__main__":
